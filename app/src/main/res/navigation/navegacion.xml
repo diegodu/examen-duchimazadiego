@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navegacion"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myapplicationexamenduchimazadiego.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+        <action
+            android:id="@+id/register"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.myapplicationexamenduchimazadiego.InicioFragment"
+        android:label="InicioFragment" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.myapplicationexamenduchimazadiego.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.myapplicationexamenduchimazadiego.AboutFragment"
+        android:label="AboutFragment" />
+    <fragment
+        android:id="@+id/agendaFragment"
+        android:name="com.example.myapplicationexamenduchimazadiego.AgendaFragment"
+        android:label="AgendaFragment" />
+</navigation>
